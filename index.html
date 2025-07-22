@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Para Mi Mejor Amiga 💖</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- Fuentes y estilos -->
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- 🎵 Música de fondo (iniciada por usuario) -->
+  <audio id="musica" loop>
+    <source src="musica.mp3" type="audio/mpeg">
+    Tu navegador no soporta audio HTML5.
+  </audio>
+
+  <!-- 🌟 Fondo con partículas (canvas animado opcional) -->
+  <canvas id="fondo"></canvas>
+
+  <!-- ✨ Fondo decorativo adicional -->
+  <div class="brillitos"></div>
+
+  <!-- 🌸 Contenido principal -->
+  <main class="container animar-entrada">
+
+    <!-- Título bonito -->
+    <h1 class="titulo">🌸 Para ti, mi mejor amiga 🌸</h1>
+
+    <!-- Imagen de la amiga -->
+    <div class="foto-container">
+      <img src="tu-foto.jpg" alt="Tu foto hermosa" class="foto-amiga">
+    </div>
+
+    <!-- Texto con efecto de escritura -->
+    <p id="mensaje" class="typewriter"></p>
+
+    <!-- Botón para iniciar música (requerido en móviles) -->
+    <button id="playAudio">Toca aquí para comenzar 💖</button>
+
+    <!-- Botón para mostrar la sorpresa -->
+    <button id="boton" style="display: none;">Haz clic para ver tu regalo 🎁</button>
+
+    <!-- Contenedor oculto con el mensaje sorpresa -->
+    <div class="sorpresa" id="sorpresa">
+      <p class="gran-mensaje">✨ ¡Tú eres mi persona favorita en el mundo! ✨</p>
+      <img src="brillo.gif" alt="Brillito de amor">
+    </div>
+
+  </main>
+
+  <!-- Scripts -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
